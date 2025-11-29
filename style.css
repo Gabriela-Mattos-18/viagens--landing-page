@@ -1,0 +1,146 @@
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+nav {
+  width: 100%;
+  height: 64px;
+  background: #fadfac;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  z-index: 10;
+}
+
+.logo { 
+  font-size: 24px; 
+  color: #eb6223; 
+}
+
+.nav-list { 
+  list-style: none; 
+  display: flex; 
+  gap: 10px; 
+  align-items: center; 
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 250ms ease, transform 150ms ease, box-shadow 200ms ease;
+  background: transparent;
+}
+
+.nav-link:hover {
+  background: #e4b080;        
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(192,150,100,0.18);
+  color: #222;
+}
+
+.nav-link:focus {
+  outline: 3px solid rgba(255, 115, 0, 0.18);
+  outline-offset: 3px;
+}
+
+.banner {
+  margin-top: 64px; 
+  width: 100%;
+  height: 420px;
+  background-image: url('https://www.melhoresdestinos.com.br/wp-content/uploads/2023/09/cidadezinha-europa-conhecer-capa.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+body {
+  color: rgb(207, 101, 40); 
+}
+
+h2 {
+  color: rgb(207, 101, 40);
+}
+
+.overlay-text {
+  color: rgb(0, 0, 0);
+  padding: 28px;
+  text-shadow: 0 3px 12px rgba(122, 10, 10, 0.726);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: rgba(194, 119, 34, 0.12);
+  color: #f3b17a;
+  font-weight: 700;
+  transition: background 260ms ease, transform 160ms ease, box-shadow 200ms ease;
+  border: 2px solid rgba(255,255,255,0.18);
+}
+
+.cta:hover {
+  background: rgba(255,255,255,0.9);
+  color: #df6f43;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+.cta:focus {
+  outline: 3px solid rgb(245, 115, 55);
+  outline-offset: 4px;
+}
+
+.section {
+  padding: 72px 32px;
+  background: #fbfbfb;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+
+.section h2 { 
+  margin-bottom: 12px; 
+}
+
+footer {
+  padding: 28px 20px;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.footer-link {
+  color: #df6f43;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 240ms ease, color 240ms ease, transform 150ms ease;
+}
+
+.footer-link:hover {
+  background: #df6f43;
+  color: #222;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 720px) {
+  .overlay-text h2 { font-size: 22px; }
+  nav { padding: 0 14px; }
+  .nav-list { gap: 6px; }
+  .banner { height: 320px; }
+}
